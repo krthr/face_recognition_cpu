@@ -31,4 +31,4 @@ jobs:
         with:
           push: true
           platforms: linux/amd64,linux/arm64
-          tags: thr/face_recognition_cpu:latest
+          tags: krthr/face_recognition_cpu:latest
