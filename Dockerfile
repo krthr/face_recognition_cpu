@@ -30,7 +30,7 @@ ENV CFLAGS=-static
 RUN pip3 install --upgrade pip && \
   git clone -b 'v19.24' --single-branch https://github.com/davisking/dlib.git && \
   cd dlib/ && \
-  python3 setup.py install --set BUILD_SHARED_LIBS=OFF USE_AVX_INSTRUCTIONS
+  python3 setup.py install --set BUILD_SHARED_LIBS=OFF --set USE_AVX_INSTRUCTIONS=1
 
 # Install Dlib
 # RUN cd ~ && \
